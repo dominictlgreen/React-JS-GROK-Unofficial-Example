@@ -1,0 +1,45 @@
+
+.ai-mode-grok{
+
+	
+
+}
+
+.ai-micro-flag p{
+
+	font-size: 14px;
+
+}
+
+.ai-micro-flag .ui-micro-icon{
+
+	position: relative;
+	
+	top: 8px;
+
+}
+
+.ai-mode-grok {
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.ai-micro-flag {
+
+	flex: 1;
+	overflow-y: auto;
+	//padding: 20px;
+	
+	
+	//position: sticky; /* Makes the element sticky */
+	//bottom: 0;        /* Sticks to the bottom of its container */
+	//background-color: white; /* Optional: Visible background */
+	//z-index: 10;      /* Optional: Ensure it stays on top */
+	//padding: 10px;
+
+}

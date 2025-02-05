@@ -1,0 +1,97 @@
+
+import React, { useState } from "react";
+import { Send } from "react-feather";
+
+import mpipe from "../modules/api/mpipe-store-alt";
+
+export default function AIMicroInput({ updateMessages }) {
+
+	
+	const [inputValue, setInputValue] = useState("");
+	
+	const handleSend = async () => {
+	
+		if (inputValue.trim() === "") return;
+		
+		
+		// add user message..
+		
+		mpipe.set({ role: "user", content: inputValue });
+		
+		
+		setInputValue(""); // clear input
+		
+		
+		// call api and get updated conversation / thread
+		
+		const updatedConversation = await mpipe.sendToAPI();
+		
+		if (updatedConversation) updateMessages(updatedConversation);
+	
+	};
+	
+	
+	return (
+	
+		<div style={containerStyle}>
+		
+			<input
+				type="text"
+				placeholder="Message..."
+				value={inputValue}
+				onChange={(e) => setInputValue(e.target.value)}
+				onKeyDown={(e) => e.key === "Enter" && handleSend()}
+				style={inputStyle}
+			/>
+			
+			<button
+				onClick={handleSend}
+				disabled={!inputValue.trim()}
+				style={{ ...buttonStyle, color: inputValue.trim() ? "#0078FF" : "#ccc" }}
+			>
+			
+				<Send size={20} />
+			
+			</button>
+		
+		</div>
+	
+	);
+
+}
+
+const containerStyle = {
+
+	display: "flex",
+	alignItems: "center",
+	borderRadius: "5px",
+	gap: "8px",
+	padding: "5px 10px",
+	backgroundColor: "#fff"
+
+};
+
+const inputStyle = {
+
+	flex: 1,
+	borderRadius: "5px",
+	border: "none",
+	padding: "8px 10px",
+	fontSize: "14px",
+	outline: "none",
+	boxShadow: "none",
+	caretColor: "#0078FF",
+
+};
+
+const buttonStyle = {
+
+	border: "none",
+	background: "transparent",
+	cursor: "pointer",
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
+	padding: "5px"
+
+};

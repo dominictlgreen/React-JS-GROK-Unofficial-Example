@@ -1,0 +1,55 @@
+
+import React from "react";
+
+import { Book, Image, FileText, Mic, Layers, Tool } from "react-feather";
+
+import styles from "./ui-micro-modes.module.css";
+
+const buttons = [
+
+	{ id: "grok", label: "Grok", icon: <Book /> },
+	{ id: "image", label: "Image Generation", icon: <Image /> },
+	{ id: "document", label: "Document Assist", icon: <FileText /> },
+	{ id: "voice", label: "Voice Input / Conversation Mode", icon: <Mic /> },
+	{ id: "augmented", label: "Augmented Mode", icon: <Layers /> },
+	{ id: "tools", label: "Workflows & Business Tools", icon: <Tool /> },
+
+];
+
+const UIMicroModes = () => (
+	<div className={styles.grid}>
+		{buttons.map((btn) => (
+			<div key={btn.id} className={styles.button}>
+				{btn.icon}
+				<span>{btn.label}</span>
+			</div>
+		))}
+	</div>
+);
+
+const UIMicroModes = () => (
+
+	<div className={styles.grid}>
+	
+		<div className={styles.wrapper}>
+		
+			<div className={styles.iconwrapper}>
+			
+				
+			
+			</div>
+			
+			<div className={styles.textwrapper}>
+			
+				<span>Grok</span>
+			
+			</div>
+		
+		</div>
+	
+	</div>
+
+);
+
+
+export default UIMicroModes;

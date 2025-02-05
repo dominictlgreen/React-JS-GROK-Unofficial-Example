@@ -1,0 +1,24 @@
+
+.mpipe-window{
+
+	padding: 10px 0px;
+
+}
+
+.mpipe-window .system{
+
+	margin-bottom: 15px;
+
+}
+
+.mpipe-window .user{
+
+	color: rgba(25, 25, 25, 0.6);
+	
+	margin-top: 5px;
+	
+	margin-bottom: 20px;
+	
+	text-align: right;
+
+}

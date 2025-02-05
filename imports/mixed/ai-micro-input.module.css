@@ -1,0 +1,35 @@
+
+.ai-micro-input-container {
+
+	position: sticky; /* Makes the element sticky */
+	bottom: 0;        /* Sticks to the bottom of its container */
+	background-color: white; /* Optional: Visible background */
+	z-index: 10;      /* Optional: Ensure it stays on top */
+	padding: 10px;
+
+}
+
+.ai-micro-input {
+
+	display: flex;
+
+}
+
+.ai-micro-input input {
+
+	border: none;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: none;
+	padding: 5px 10px;
+	font-size: 14px;
+	outline: none;
+
+}
+
+.ai-micro-input input:focus {
+
+	border: none;
+
+}
+

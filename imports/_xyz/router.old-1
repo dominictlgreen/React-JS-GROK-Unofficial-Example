@@ -1,0 +1,61 @@
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+//import AppStart from './pages/AppStart';
+//import AIBasicPage from './pages/ai_basic';
+//import AppMenu from './pages/app_menu';
+
+// export default function AppRouter() {return <AppStart />;}
+
+
+export default function AppRouter() {
+console.log('AppRouter rendering');
+return (
+<Router>
+<Routes>
+<div>Routes Wrapper Test</div>
+</Routes>
+</Router>
+);
+}
+
+/*export default function AppRouter() {
+	
+	console.log("AppRouter Loaded");
+	
+	//return <div>123</div>;
+	
+	
+
+	/*return (
+		<Router>
+		{console.log('Router is rendered')}
+			<Routes>
+			{console.log('Routes are being rendered')}
+				<Route path="/" element={<div>Basic Route Test</div>} />
+				<Route path="/menu" element={<div>Basic Route Test</div>} />
+				//<Route path="/" element={<AppStart />} />
+				//<Route path="/aibasic" element={<AIBasicPage />} />
+				//<Route path="/menu" element={<AppMenu />} />
+				//<Route path="*" element={<div>Fallback Route</div>} />
+			</Routes>
+		</Router>
+	);*/
+	
+	
+	
+	/*return (
+		<Router>
+		{console.log('Router is rendered')}
+			<Routes>
+			{console.log('Routes are being rendered')}
+				<Route path="/" element={<div>Basic Route Test</div>} />
+				//<Route path="/" element={<AppStart />} />
+				//<Route path="/aibasic" element={<AIBasicPage />} />
+				//<Route path="/menu" element={<AppMenu />} />
+			</Routes>
+		</Router>
+	);*/
+
+//}

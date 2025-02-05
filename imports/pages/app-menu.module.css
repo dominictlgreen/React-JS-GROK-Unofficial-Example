@@ -1,0 +1,87 @@
+
+.app-menu {
+
+	
+
+}
+
+.app-menu-top {
+
+	
+
+}
+
+
+.app-menu-top .app-menu-close{
+
+	padding-right: 5px;
+
+}
+
+
+.app-menu-mid {
+
+	height: 50vh;
+
+}
+
+.app-menu-mid .app-menu-item {
+
+	display: flex;
+	
+	align-items: center;
+	
+	//margin-bottom: 5px;
+	
+	padding: 0px 10px;
+
+}
+
+.app-menu-mid .app-menu-item-icon {
+
+	display: flex;
+	
+	align-items: center;
+	
+	justify-content: center;
+	
+	padding: 5px;
+	
+	
+	margin-bottom: 5px;
+
+}
+
+.app-menu-mid .app-menu-item-text {
+
+	flex: 1;
+	
+	display: flex;
+	
+	align-items: center;
+	
+	padding-left: 10px;
+
+}
+
+.app-menu-mid .app-menu-item-text h3 {
+
+	color: rgba(25, 25, 25, 0.8);
+	
+	font-weight: 500;
+	
+	font-size: 18px;
+
+}
+
+.app-menu-mid .menuicon {
+
+	color: rgba(25, 25, 25, 0.8);
+
+}
+
+.app-menu-base {
+
+	padding: 20px;
+
+}

@@ -1,0 +1,33 @@
+
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
+import AppStart from './pages/app_start';
+import AppMenu from './pages/app_menu';
+import AIBasicPage from './pages/ai_basic';
+import NotFound from './pages/not_found';
+
+import './css/transitions.css';
+
+export default function AppRouter() {
+
+	console.log('AppRouter rendering');
+	
+	return (
+	
+		<Router>
+		
+			<Routes>
+			
+				<Route path="/" element={<AppStart />} />
+				<Route path="/appmenu" element={<AppMenu />} />
+				<Route path="/ai-basic" element={<AIBasicPage />} />
+				<Route path="*" element={<NotFound />} />
+			
+			</Routes>
+		
+		</Router>
+	
+	);
+}

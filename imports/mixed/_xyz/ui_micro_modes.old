@@ -1,0 +1,46 @@
+
+import React from "react";
+
+import { useSelector, useDispatch } from 'react-redux';
+import { setAiMode } from '../store'; // Correct path
+
+import { Activity, Book, Codesandbox, Copy, DivideSquare, Image, FileText, Mic, Layers, Tool } from "react-feather";
+
+import styles from "./ui-micro-modes.module.css";
+
+
+const buttons = [
+
+	{ id: "grok", label: "Grok Text Mode", icon: <Copy size={38} className="icongrok" /> },
+	{ id: "image", label: "Imgage Gen Mode", icon: <Image size={38} className="icongrok" /> },
+	{ id: "document", label: "Document Assist", icon: <FileText size={38} className="icongrok" /> },
+	{ id: "voice", label: "Voice Input Mode", icon: <Activity size={38} className="icongrok" /> },
+	{ id: "augmented", label: "Augmented Mode", icon: <Codesandbox size={38} className="icongrok" /> },
+	{ id: "tools", label: "Workflow Mode", icon: <Layers size={38} className="icongrok" /> },
+
+];
+
+
+
+const UIMicroModes = () => (
+
+	<div className="grid">
+	
+		{buttons.map((btn) => (
+		
+			<div key={btn.id} className="button">
+			
+				{btn.icon}
+				
+				<span>{btn.label}</span>
+			
+			</div>
+		
+		))}
+	
+	</div>
+
+);
+
+
+export default UIMicroModes;

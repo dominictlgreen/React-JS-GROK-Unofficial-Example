@@ -1,0 +1,55 @@
+
+.app-menu-profile{
+
+	padding: 0px 20px 40px 20px;
+
+}
+
+.app-menu-profile-img{
+
+	
+
+}
+
+.app-menu-profile-img img{
+
+	height: 50px;
+	
+	border-radius: 10px;
+
+}
+
+.app-menu-profile-name{
+
+	
+
+}
+
+.app-menu-profile-name h3{
+
+	color: rgba(25, 25, 25, 0.8);
+	
+	font-weight: 600;
+	
+	font-size: 18px;
+	
+	
+	margin-bottom: 3px;
+
+}
+
+.app-menu-profile-screename{
+
+	
+
+}
+
+.app-menu-profile-screename h4{
+
+	color: rgba(25, 25, 25, 0.6);
+	
+	font-weight: 400;
+	
+	font-size: 14px;
+
+}

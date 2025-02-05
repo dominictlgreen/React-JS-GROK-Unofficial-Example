@@ -1,0 +1,116 @@
+
+import React, { useEffect } from 'react';
+
+import { useNavigate } from "react-router-dom";
+
+import styles from "./app-menu.module.css";
+
+import { Paperclip, User, X, XSquare } from 'react-feather';
+
+
+const menu_data = [
+
+	{ main: "Profile", subtext: "Grok", icon: " " },
+	{ main: "Upgrade", subtext: "Image Gen", icon: " " },
+	{ main: "Profile", subtext: "Grok", icon: " " },
+	{ main: "image", subtext: "Image Gen", icon: " " },
+	{ main: "Profile", subtext: "Grok", icon: " " },
+	{ main: "image", subtext: "Image Gen", icon: " " },
+
+];
+
+
+export default function AppMenu() {
+
+	
+	const navigate = useNavigate();
+	
+	const CloseMenu = () => {
+	
+		navigate("/ai-basic");
+	
+	};
+	
+	
+	return (
+	
+		<div className="page-wrapper">
+		
+			<div className="app-menu">
+			
+				<div className="app-menu-top flex">		
+					
+					<div className="app-menu-text flex-3 flex-center-v">
+					
+						
+					
+					</div>
+					
+					<div className="app-menu-close flex-1 text-right flex-center-v">
+					
+						<X size={40} color="#191919" className="my-icon" onClick={CloseMenu}/>
+					
+					</div>
+				
+				</div>
+				
+				
+				{/*--  --*/}
+				
+				
+				<div className="app-menu-mid">		
+				
+					
+					<div className="app-menu-item flex">
+					
+						<div className="app-menu-item-icon flex flex-center-v">
+						
+							<User size={30} className="menuicon" />
+						
+						</div>
+						
+						<div className="app-menu-item-text flex flex-3 flex-center-v">
+						
+							<h3>Profile</h3>
+						
+						</div>
+					
+					</div>
+					
+					
+					<div className="app-menu-item flex">
+					
+						<div className="app-menu-item-icon flex flex-center-v">
+						
+							<Paperclip size={30} className="menuicon" />
+						
+						</div>
+						
+						<div className="app-menu-item-text flex flex-3 flex-center-v">
+						
+							<h3>Files & Attachments</h3>
+						
+						</div>
+					
+					</div>
+					
+				
+				</div>
+				
+				
+				{/*--  --*/}
+				
+				
+				<div className="app-menu-base">		
+					
+					<span>xAI: Grok ©2025</span>
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	
+	)
+
+}

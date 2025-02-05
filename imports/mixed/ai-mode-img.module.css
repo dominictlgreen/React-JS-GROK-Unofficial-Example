@@ -1,0 +1,24 @@
+
+.ai-mode-img{
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+
+}
+
+.ai-micro-flag p{
+
+	font-size: 14px;
+
+}
+
+.ai-micro-flag .ui-micro-icon{
+
+	position: relative;
+	
+	top: 8px;
+
+}

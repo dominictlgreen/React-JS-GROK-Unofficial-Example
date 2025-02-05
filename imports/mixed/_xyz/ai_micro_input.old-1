@@ -1,0 +1,100 @@
+
+import React, { useState } from "react";
+import { Send } from "react-feather";
+
+import styles from './ai-micro-input.module.css';
+
+export default function AIMicroInput() {
+
+	
+	const [inputValue, setInputValue] = useState("");
+	
+	const handleInputChange = (e) => {
+	
+		setInputValue(e.target.value);
+	
+	};
+	
+	const input_process = () => {
+	
+		if (inputValue.trim() === "") return; // Prevent sending empty input
+		
+		console.log("Input Processed:", inputValue); // Replace with actual API call or logic
+		
+		setInputValue(""); // Clear input field
+	
+	};
+	
+	return (
+	
+		<div className="ai-micro-input no-select no-highlight" style={containerStyle}>
+		
+			<input
+				type="text"
+				id="ai-micro-input-text"
+				className="no-select no-highlight"
+				placeholder="Type a message..."
+				value={inputValue}
+				onChange={handleInputChange}
+				onKeyDown={(e) => {
+				if (e.key === "Enter") input_process(); // Allow Enter key to send
+				}}
+				style={inputStyle}
+			/>
+			
+			<button
+			
+				onClick={input_process}
+				
+				disabled={!inputValue.trim()} // Grey out if input is empty
+				
+				style={{
+				
+					...buttonStyle,
+					color: inputValue.trim() ? "#0078FF" : "#ccc", // Dynamic color
+				
+				}}
+				>
+				<Send size={20} />
+			
+			</button>
+		
+		</div>
+	
+	);
+
+}
+
+const containerStyle = {
+
+	display: "flex",
+	alignItems: "center",
+	borderRadius: "5px",
+	gap: "8px",
+	padding: "5px",
+	backgroundColor: "#fff",
+	borderTop: "1px solid #ddd"
+
+};
+
+const inputStyle = {
+
+	flex: 1,
+	borderRadius: "5px",
+	padding: "8px 10px",
+	fontSize: "14px",
+	outline: "none"
+
+};
+
+const buttonStyle = {
+
+	border: "none",
+	background: "transparent",
+	cursor: "pointer",
+	display: "flex",
+	alignItems: "center",
+	justifyContent: "center",
+	padding: "5px"
+
+};

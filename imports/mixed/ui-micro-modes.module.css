@@ -1,0 +1,69 @@
+
+.grid {
+
+	flex: 1;
+	
+	display: grid;
+	
+	grid-template-columns: repeat(3, 1fr);
+	
+	gap: 8px;
+	
+	
+	background: var(--secondary-color);
+
+}
+
+.button {
+
+	display: flex;
+	
+	flex-direction: column;
+	
+	justify-content: center;
+	
+	align-items: center;
+	
+	
+	background: white;
+	
+	
+	border-radius: 8px;
+	
+	padding: 16px;
+	
+	text-align: center;
+	
+	cursor: pointer;
+	
+	
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+}
+
+.button:hover {
+
+	transform: scale(1.05);
+	
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.button span{
+
+	text-transform: uppercase;
+
+}
+
+.icongrok {
+
+	color: rgba(25, 25, 25, 0.5);
+
+}
+
+.button span {
+
+	margin-top: 8px;
+	font-size: 9px;
+
+}

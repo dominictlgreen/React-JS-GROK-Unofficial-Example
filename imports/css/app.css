@@ -1,0 +1,78 @@
+
+html, body {
+
+	margin: 0;
+	
+	padding: 0;
+	
+	
+	background-color: var(--background-color, #fbfbfb);
+	
+	
+	height: 100%;
+	
+	width: 100%;
+	
+	overflow: hidden;
+
+}
+
+:root {
+
+	--background-color: #fbfbfb;
+
+}
+
+#react-target {
+
+	height: 100%;
+	
+	width: 100%;
+	
+	padding: 0;
+	
+	
+	box-sizing: border-box;
+	
+	background-color: var(--background-color, #fbfbfb);
+	
+	
+	position: fixed;
+	
+	top: 0;
+	
+	left: 0;
+	
+	right: 0;
+	
+	bottom: 0;
+
+}
+
+.app-wrapper {
+
+	padding: 10px 20px 20px 20px;
+	
+	height: 100%;
+	
+	width: 100%;
+	
+	box-sizing: border-box;
+
+}
+
+.page-wrapper{
+
+	padding: 20px 20px 20px 20px;
+
+}
+
+* {
+
+	margin: 0;
+	
+	padding: 0;
+	
+	box-sizing: border-box;
+
+}

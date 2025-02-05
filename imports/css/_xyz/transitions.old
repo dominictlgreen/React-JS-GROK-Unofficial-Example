@@ -1,0 +1,21 @@
+/* Slide In */
+.menu-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.menu-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 300ms ease, opacity 300ms ease;
+}
+
+/* Slide Out */
+.menu-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.menu-exit-active {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 300ms ease, opacity 300ms ease;
+}

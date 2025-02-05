@@ -1,0 +1,22 @@
+.ai-micro-options {
+  display: flex;
+  justify-content: space-between; /* Push left and right groups apart */
+  align-items: center; /* Vertically center icons */
+}
+
+.ai-micro-options-left,
+.ai-micro-options-right {
+  display: flex;
+  gap: 10px; /* Adjustable gap between icons */
+}
+
+.ai-micro-option-icon {
+  color: rgba(25, 25, 25, 0.6);
+  font-size: 16px;
+  cursor: pointer; /* Indicate interactivity */
+  transition: color 0.2s ease-in-out;
+}
+
+.ai-micro-option-icon:hover {
+  color: rgba(25, 25, 25, 1); /* Darken on hover */
+}

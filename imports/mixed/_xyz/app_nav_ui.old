@@ -1,0 +1,57 @@
+
+import React from "react";
+
+import styles from "./app-nav-ui.module.css";
+
+
+import { AlignCenter } from 'react-feather';
+
+
+
+const AppNavUI = () => {
+
+	const navigate = useNavigate();
+	
+	const OpenMenu = () => {
+	
+		navigate("/menu");
+	
+	};
+	
+	return (
+	
+		<div className="flex flex-center-v">
+		
+			<div className="flex-1">
+			
+				<AlignCenter size={32} color="#191919" className="my-icon" onClick={OpenMenu}/>
+			
+			</div>
+			
+			<div className="flex-3 text-center">
+			
+				<img
+					src="/brand/grok-brand-micro-a-b.png"
+					alt="Grok AI For Personal, Business, Mars & Beyond.."
+					className={styles.imagebrand}
+				/>
+			
+			</div>
+			
+			<div className={`flex-1 ${styles.profilemicro}`}>
+			
+				<img
+					src="/cache/1727968341810.jpg"
+					alt="User Profile Picture"
+					className={styles.imageuser}
+				/>
+			
+			</div>
+		
+		</div>
+	
+	);
+
+};
+
+export default AppNavUI;

@@ -1,0 +1,18 @@
+
+const mpipeStore = [];
+
+const mpipe = {
+
+	get: () => [...mpipeStore], // Returns a duplicate of the array
+	
+	set: (newMessage) => {
+	
+		mpipeStore.push(newMessage);
+		
+		return [...mpipeStore]; // Return updated array
+	
+	}
+
+};
+
+export default mpipe;
