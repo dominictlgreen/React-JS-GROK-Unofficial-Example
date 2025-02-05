@@ -11,7 +11,7 @@ export const sendToAPI = async (dispatch, conversation) => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                Authorization: "Bearer xai-7uKbA5QdIekWTegliLuAWJCGLLdN9e4Sdc5nRACXJJKQ8pvXvQhvrhbQepK165uS13PSGR0nAZlLZ1b2",
+                Authorization: "*** YOUR GROK API KEY HERE ***",
             },
             body: JSON.stringify({
                 messages: conversation,
