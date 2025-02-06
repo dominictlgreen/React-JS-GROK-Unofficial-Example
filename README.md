@@ -25,3 +25,5 @@ An unofficial React.js-based example project demonstrating real-world data fetch
 ## Intermediate vs. Advanced React JS
 
 ## Vue JS vs. React JS
+
+## Notes
