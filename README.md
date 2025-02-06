@@ -6,7 +6,7 @@ An unofficial React.js-based example project demonstrating real-world data fetch
 
 ## App Outline
 
-## High Lelev Design Concept(s)
+## High Level Design Concept(s)
 
 ## Design Principles & Choice Pathway(s)
 
